@@ -1,0 +1,15 @@
+﻿@model API.Data.Gov.Models.Parks
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Index</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@foreach(API.Data.Gov.Models.Park park in Model.data)
+ {
+  @(park.parkCode + park.fullName + " " + park.latLong + " " + park.latLong)  
+    <br />
+ }
