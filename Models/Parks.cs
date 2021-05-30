@@ -5,6 +5,15 @@ using System.Threading.Tasks;
 
 namespace API.Data.Gov.Models
 {
+
+    
+  public class GuestContact
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+    }
+
     public class Parks
     {
         public string total { get; set; }

@@ -56,6 +56,31 @@ namespace API.Data.Gov.Controllers
 
             return View(parks);
         }
+
+
+        public IActionResult Contact()
+        {
+           
+            {
+                GuestContact contact = new GuestContact();
+
+                contact.Name = "Sean Castanon";
+                contact.Email = "seancastanon@usf.edu";
+                contact.Phone = "813-123-4567";
+
+                return View(contact);
+
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Contact (GuestContact contact)
+        {
+            return View(contact);
+        }
+
+
+
     }
 }
 

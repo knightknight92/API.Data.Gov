@@ -1,0 +1,19 @@
+﻿@model API.Data.Gov.Models.GuestContact
+
+
+<p>Hello guest</p>
+<p>Name: @Model.Name</p>
+<p>Email: @Model.Email</p>
+<p>Phone number: @Model.Phone</p>
+
+<form asp-controller=" Home" asp-action="Contact" method="post">
+    <p>Name: <input asp-for=" Name" /></p>
+    <p>Email:<input asp-for="Email" /><</p>
+    <p>Phone number: <input asp-for="Phone" /><</p>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<a asp-controller="Home" asp-action ="Index" asp-route-id="12">Home page</a>
+
